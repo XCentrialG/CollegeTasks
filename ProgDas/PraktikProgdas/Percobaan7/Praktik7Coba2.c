@@ -23,3 +23,5 @@ void average()
     c = b / banyak;
     printf("Rata-Rata semua data adalah %.2f\n", c);
 }
+
+//copy as you like
