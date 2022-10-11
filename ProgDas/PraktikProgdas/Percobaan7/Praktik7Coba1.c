@@ -26,3 +26,5 @@ void even()
     while (a <= banyak);
     printf("Hasil Penjumlahan data genap = %d\n", b);
 }
+
+// copy as you like
