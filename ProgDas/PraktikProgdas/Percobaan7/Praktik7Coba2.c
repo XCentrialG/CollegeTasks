@@ -15,7 +15,7 @@ void average()
     b = 0;
     while (a <= banyak)
     {
-        printf("Masukkan data ke %d: ", a);
+        printf("Masukkan data ke %d: ", a); // output
         scanf("%d", &angka);
         b = b + angka;
         a++;
