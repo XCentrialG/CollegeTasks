@@ -7,7 +7,7 @@ int a, b, c;
 
 int main(int argc, char const *argv[])
 {
-    printf("Nilai mtk: ");
+    printf("Masukkan nilai mtk: ");
     scanf("%d", &a);
     printf("\n");
     fisika(a);
@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
 
 int fisika(int a)
 {
-    printf("Nilai fisika: ");
+    printf("Masukkan nilai fisika: ");
     scanf("%d", &b);
     printf("\n");
     kimia(b);
@@ -23,7 +23,7 @@ int fisika(int a)
 
 int kimia(int b)
 {
-    printf("Nilai kimia: ");
+    printf("Masukkan nilai kimia: ");
     scanf("%d", &c);
     printf("\n");
     average(a, b, c);
@@ -34,5 +34,5 @@ float average(float a, float b, float c)
     float avg, sum;
     sum = a + b + c;
     avg = sum / 3;
-    printf("rata rata adalah %.1f", avg);
+    printf("Nilai rata rata adalah %.1f", avg);
 }
