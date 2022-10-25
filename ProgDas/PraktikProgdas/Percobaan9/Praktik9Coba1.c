@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-    int a, b, c, d, e;
+    int a, b, c, d, e;          // variables, not for input from keyboard
     printf ("Masukkan jumlah karakter yang akan dihitung : ");
     scanf ("%d", &b);
     char kar1 [b];
