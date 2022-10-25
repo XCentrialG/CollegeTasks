@@ -1,6 +1,6 @@
 #include <stdio.h>
 float average(float, float, float);
-int matematika(int a);
+int matematika(int);
 int fisika(int);
 int kimia(int);
 int a, b, c;

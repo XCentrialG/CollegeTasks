@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main(int argc, char const *argv[])
+main ()
 {
     int a, b, c, d, e;
     printf ("Masukkan jumlah karakter yang akan dihitung : ");
