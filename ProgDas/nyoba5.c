@@ -1,15 +1,38 @@
 #include <stdio.h>
-void average(void);
+float average(float, float, float);
+int matematika(int);
+int fisika(int);
+int kimia(int);
+int a, b, c;
 
 int main(int argc, char const *argv[])
 {
-    float avg, a, b, math, psy, chm;
-    printf("Masukkan Nilai mtk: ");
-    scanf("%f", &math);
-    printf("Masukkan Nilai fisika: ");
-    scanf("%f", &psy);
-    printf("Masukkan Nilai Kimia: ");
-    scanf("%f", &chm);
+    printf("Masukkan nilai mtk: ");
+    scanf("%d", &a);
+    printf("\n");
+    fisika(a);
+}
 
-    printf("Nilai rata-ratanya adalah %.1f\n", avg);
+int fisika(int a)
+{
+    printf("Masukkan nilai fisika: ");
+    scanf("%d", &b);
+    printf("\n");
+    kimia(b);
+}
+
+int kimia(int b)
+{
+    printf("Masukkan nilai kimia: ");
+    scanf("%d", &c);
+    printf("\n");
+    average(a, b, c);
+}
+
+float average(float a, float b, float c)
+{
+    float avg, sum;
+    sum = a + b + c;
+    avg = sum / 3;
+    printf("Nilai rata rata adalah %.1f", avg);
 }
