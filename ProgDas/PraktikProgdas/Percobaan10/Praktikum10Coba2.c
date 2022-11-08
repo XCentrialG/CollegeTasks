@@ -1,11 +1,12 @@
 #include <stdio.h>
+#define __SSE2__ 1
 #define N 255
-void pengganti(char*, char, char);
+void pengganti(char, char, char);
 int main(int argc, char const *argv[])
 {
     char data[N], find, ganti;
     printf("Masukkan sebuah string: ");
-    scanf("%[^\n]", data);
+    scanf("%[^\n]", &data);
     printf("\nHuruf yang akan diganti: ");
     getchar();
     scanf("%c", &find);
@@ -17,12 +18,12 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
-void pengganti(char *data, char find, char pengganti)
+void pengganti(char data, char find, char pengganti)
 {
     int i=0;
     while (data != '\0')
     {
-        *data = ((*data == find) ?pengganti:*data);
+        data = ((data == find) ?pengganti:data);
         data++;
         i++;
     }
